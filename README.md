@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Getting Started
 ===============
 
@@ -16,3 +17,6 @@ Best practice is to create a new workspace for each project you're working on. F
 more information, please see the ROS Tutorials:
 
 http://wiki.ros.org/ROS/Tutorials
+=======
+# TestRepo
+>>>>>>> b3668ec2a704adba37b0946153ade5bed4f43230

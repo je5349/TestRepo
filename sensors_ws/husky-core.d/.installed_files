@@ -1,0 +1,8 @@
+/etc/ros/indigo/husky-core.d/base.launch
+/etc/ros/indigo/husky-core.d/navsat.launch
+/etc/ros/indigo/husky-core.d
+/usr/sbin/husky-core-stop
+/etc/ros/indigo/husky-core.d/.installed_files
+/etc/init/husky-core.conf
+/usr/sbin/husky-core-start
+/etc/ros/indigo/husky-core.d/um6.launch

@@ -1,0 +1,13 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~enabled" : \b [bool] Whether to apply this plugin or not min: False, default: True, max: True
+- \b "~footprint_clearing_enabled" : \b [bool] Whether to clear the robot's footprint of lethal obstacles min: False, default: True, max: True
+- \b "~max_obstacle_height" : \b [double] The maximum height of any obstacle to be inserted into the costmap in meters. min: 0.0, default: 2.0, max: 50.0
+- \b "~combination_method" : \b [int] Method for combining two layers min: -2147483648, default: 1, max: 2147483647
+- \b "~obstacle_lifespan" : \b [double] Number of seconds to remember an observations without proof min: 0.0, default: 3.0, max: 3600.0
+- \b "~obstacle_keep_radius" : \b [double] Radius within which no obstacles will be forgotten min: 0.0, default: 1.7, max: 100.0
+- \b "~enable_forget" : \b [bool] If observations should be allowed to be forgotten min: False, default: True, max: True
+- \b "~pose_confidence_threshold" : \b [double] Pose confidence threshold below which obstacles are not remembered. min: 0.0, default: 0.7, max: 1.0
+

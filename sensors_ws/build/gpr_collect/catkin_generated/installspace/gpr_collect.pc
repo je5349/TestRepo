@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/install
+
+Name: gpr_collect
+Description: Description of gpr_collect
+Version: 0.0.0
+Cflags: -I/home/administrator/sensors_ws/install/include
+Libs: -L/home/administrator/sensors_ws/install/lib -lgpr_collect
+Requires: roscpp rospy std_msgs message_runtime

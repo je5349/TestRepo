@@ -1,0 +1,14 @@
+Header header
+float64 heading
+float64 pitch
+float64 roll
+float64 temperature
+float64 depth
+float64 magnetic_vector_length
+float64 mx
+float64 my
+float64 mz
+float64 acceleration_vector_length
+float64 ax
+float64 ay
+float64 az

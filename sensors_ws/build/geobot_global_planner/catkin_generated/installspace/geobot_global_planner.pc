@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/install
+
+Name: geobot_global_planner
+Description: Description of geobot_global_planner
+Version: 0.0.0
+Cflags: -I/home/administrator/sensors_ws/install/include
+Libs: -L/home/administrator/sensors_ws/install/lib -lgeobot_global_planner
+Requires: costmap_2d dynamic_reconfigure geometry_msgs nav_core navfn nav_msgs pluginlib roscpp tf

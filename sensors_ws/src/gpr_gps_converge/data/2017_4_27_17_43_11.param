@@ -1,0 +1,12 @@
+Time: Thu Apr 27 17:43:11 2017
+
+traceSize: 440
+headerSize: 40
+headerID: 5401
+traceStatusFlag: 0
+numStacks: 4
+hardwareFlag: 0
+dataSize: 200
+sampleInterval: 200
+frequency: 500.0
+CoordinateFormat: UTM

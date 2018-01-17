@@ -1,0 +1,96 @@
+#include <iostream>
+#include <cstring>
+#include <cstring>
+#include <vector>
+#include "ros/ros.h"
+#include "gpr_collect/GprTrace.h"
+#include "std_msgs/Int16.h"
+#include "gpr_gps_converge/GprTraceLocation.h"
+#include "gpr_gps_converge/GprConverged.h"
+
+using namespace std;
+
+class FreeConverge{
+public:
+	FreeConverge();
+	void gprDataCallback(const gpr_collect::GprTrace& object);
+	void gpsDataCallback(const gpr_gps_converge::GprTraceLocation& object);
+
+private:
+	ros::NodeHandle nh;
+	ros::Subscriber gpr_receiver;
+	ros::Subscriber gps_receiver;
+	ros::Publisher converged_data_emitter;
+
+	std::vector<gpr_gps_converge::GprTraceLocation> gps_vector;
+
+};
+
+FreeConverge::FreeConverge(){
+
+	gpr_receiver = nh.subscribe("gpr_trace/gpr_free", 20, &FreeConverge::gprDataCallback, this);
+	gps_receiver = nh.subscribe("gpr_pose", 20, &FreeConverge::gpsDataCallback, this);
+
+	converged_data_emitter = nh.advertise<gpr_gps_converge::GprConverged>("geobot_data/converged_gps_gpr",10);
+
+}
+
+void FreeConverge::gprDataCallback(const gpr_collect::GprTrace& object){
+	gpr_collect::GprTrace msg;
+	msg = object;
+	cout<<"trace number: "<<msg.traceNumber_<<endl;
+	if(!gps_vector.empty()){
+		gpr_gps_converge::GprTraceLocation gps_msg;
+		gps_msg = gps_vector.back();
+		gpr_gps_converge::GprConverged conv_msg;
+		conv_msg.rosTime_ = msg.rosTime_;
+		conv_msg.traceSize_ = msg.traceSize_;
+		conv_msg.headerSize_ = msg.headerSize_;
+		conv_msg.headerID_ = msg.headerID_;
+		conv_msg.stampCount_ = msg.stampCount_;
+		conv_msg.traceNumber_ = msg.traceNumber_;
+		conv_msg.odoTick_ = msg.odoTick_;
+		conv_msg.tracePos_ = msg.tracePos_;
+		conv_msg.duration_ = msg.duration_;
+		conv_msg.traceStatusFlag_ = msg.traceStatusFlag_;
+		conv_msg.numStacks_ = msg.numStacks_;
+		conv_msg.hardwareFlag_ = msg.hardwareFlag_;
+		conv_msg.dataSize_ = msg.dataSize_;
+//		conv_msg.traceData_ = msg.traceData_;
+		for(int i = 0; i<conv_msg.dataSize_; i++){
+			conv_msg.traceData_.push_back(msg.traceData_[i]);
+		}
+		conv_msg.sampleInterval_ = msg.sampleInterval_;
+		conv_msg.frequency_ = msg.frequency_;
+		conv_msg.stamp = gps_msg.stamp;
+		conv_msg.CoordinateFormat = gps_msg.CoordinateFormat;
+		conv_msg.Longitude = gps_msg.Longitude;
+		conv_msg.Latitude = gps_msg.Latitude;
+		conv_msg.Altitude = gps_msg.Altitude;
+		conv_msg.latitude_label = gps_msg.latitude_label;
+		conv_msg.longitude_label = gps_msg.longitude_label;
+		conv_msg.UTMZone = gps_msg.UTMZone;
+
+		converged_data_emitter.publish(conv_msg);
+	}
+
+}
+
+void FreeConverge::gpsDataCallback(const gpr_gps_converge::GprTraceLocation& object){
+	while(gps_vector.size()>10){
+		gps_vector.erase(gps_vector.begin());
+	}
+	gps_vector.push_back(object);
+}
+
+
+int main(int argc, char** argv){
+
+	ros::init(argc, argv, "free_converge");
+	ROS_INFO("Initializing free_converge node...");
+
+	FreeConverge fcNode;
+	ros::spin();
+	return 0;
+}
+

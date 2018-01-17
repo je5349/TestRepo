@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/devel
+
+Name: gap_finding_pkg
+Description: Description of gap_finding_pkg
+Version: 0.0.0
+Cflags: -I/home/administrator/sensors_ws/devel/include -I/home/administrator/sensors_ws/src/gap_finding_pkg/include
+Libs: -L/home/administrator/sensors_ws/devel/lib 
+Requires: roscpp rospy std_msgs message_runtime

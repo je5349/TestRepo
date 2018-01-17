@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<launch>
+
+
+<node pkg="gpr_gps_converge" type="log_gpr_trace" name="log_gpr_trace">
+	
+  </node>
+
+<node pkg="gpr_gps_converge" type="log_gpr_location" name="log_gpr_location">
+
+  </node>
+
+
+</launch>

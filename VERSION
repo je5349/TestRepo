@@ -1,0 +1,10 @@
+Flavour: indigo-husky
+Version: 0.2.1
+
+ROS Distro: indigo
+Ubuntu Distro: trusty
+Installer: netboot
+Architecture: amd64
+
+Built by: 232722314a01
+Built on: 20170125

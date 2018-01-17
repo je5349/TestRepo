@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/install
+
+Name: gps_filter
+Description: Description of gps_filter
+Version: 0.0.0
+Cflags: -I/home/administrator/sensors_ws/install/include
+Libs: -L/home/administrator/sensors_ws/install/lib -lgps_filter
+Requires: roscpp std_msgs sensor_msgs

@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/install
+
+Name: geobot_navigation
+Description: Description of geobot_navigation
+Version: 0.0.0
+Cflags: -I/home/administrator/sensors_ws/install/include
+Libs: -L/home/administrator/sensors_ws/install/lib -lgeobot_navigation
+Requires: roscpp std_msgs geometry_msgs message_runtime dynamic_reconfigure tf pointcloud_to_laserscan gap_finding_pkg

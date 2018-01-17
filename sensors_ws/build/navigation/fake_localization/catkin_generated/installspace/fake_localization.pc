@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/install
+
+Name: fake_localization
+Description: Description of fake_localization
+Version: 1.12.4
+Cflags: 
+Libs: -L/home/administrator/sensors_ws/install/lib 
+Requires: roscpp rospy

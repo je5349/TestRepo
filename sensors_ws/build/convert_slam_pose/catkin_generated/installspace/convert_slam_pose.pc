@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/install
+
+Name: convert_slam_pose
+Description: Description of convert_slam_pose
+Version: 0.0.0
+Cflags: -I/home/administrator/sensors_ws/install/include
+Libs: -L/home/administrator/sensors_ws/install/lib -lconvert_slam_pose
+Requires: geometry_msgs nav_msgs roscpp std_msgs

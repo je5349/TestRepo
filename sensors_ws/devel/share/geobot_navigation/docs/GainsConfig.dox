@@ -1,0 +1,20 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~maximum_linear_velocity" : \b [double] Max speed Geobot can go min: 0.0, default: 0.5, max: 1.1
+- \b "~maximum_angular_velocity" : \b [double] Max spin speed Geobot will do min: 0.0, default: 0.5, max: 1.1
+- \b "~error_tolerance2goal" : \b [double] Fraction of current segment where next segment is considered min: 0.0, default: 0.4, max: 1.0
+- \b "~no_of_segments_ahead" : \b [int] Number of future segments considered for speed reduction min: 1, default: 2, max: 10
+- \b "~error_gain" : \b [double] K_k Path offset gain term min: 0.0, default: 1.1, max: 2.0
+- \b "~cte_gain" : \b [double] cte Cross track error term min: 0.0, default: 0.2, max: 2.0
+- \b "~heading_gain" : \b [double] K_e Geobot heading error gain term min: 0.0, default: 0.5, max: 2.0
+- \b "~velocity_constraint" : \b [double] Max speed Geobot can go min: 0.0, default: 1.0, max: 1.1
+- \b "~obstacle_edge2robotcenter" : \b [double] Half of gap_width threshold min: 0.0, default: 0.7, max: 1.0
+- \b "~trajectory_projection" : \b [double] trajectory_projection min: 0.0, default: 1.0, max: 1.0
+- \b "~cross_track_error_deadband" : \b [double] cross track error deadband min: 0.0, default: 0.02, max: 1.0
+- \b "~side_distance_avoidance_threshold" : \b [double] side distance avoidance threshold min: 0.0, default: 0.6, max: 1.0
+- \b "~front_distance_avoidance_threshold" : \b [double] front distance avoidance threshold min: 0.0, default: 1.0, max: 2.0
+- \b "~side_avoidance_blindband" : \b [double] side avoidance blindband min: 0.0, default: 0.4, max: 1.0
+- \b "~minimum_velocity_constraint" : \b [double] minimum velocity constraint min: 0.0, default: 0.1, max: 1.0
+

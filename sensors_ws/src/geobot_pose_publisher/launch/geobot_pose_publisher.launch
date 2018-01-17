@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+
+  <node pkg="tf" type="static_transform_publisher" name="base_footprint_gpr_broadcaster" args="-0.8 0 0 0 0 0 base_footprint gpr 50"/> 
+
+  <node pkg="geobot_pose_publisher" type="geobot_pose_publisher_node" name="geobot_pose_publisher_node" respawn="true">
+  	<param name="output_pose_frequency" value="40.0"/>  <!-- This is the frequency(Hz) at which pose should written to the gpr-spidar -->
+  	<param name="output_pose_in_utm" value="true"/> <!-- If false, the pose is in longitude and latitude -->
+  	<param name="gpr_antenna_frame_id" value="gpr"/>
+  	<param name="world_frame_id" value="utm"/>
+  	<param name="gps_height_above_ground" value="0.4"/>
+  	<param name="utmZone" value="13S"/>
+    
+  </node>
+
+
+
+</launch>

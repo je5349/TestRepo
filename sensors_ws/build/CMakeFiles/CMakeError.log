@@ -1,0 +1,238 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec722454155/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec722454155.dir/build.make CMakeFiles/cmTryCompileExec722454155.dir/build
+make[1]: Entering directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec722454155.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec722454155.dir/CheckSymbolExists.c.o   -c /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec722454155
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec722454155.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec722454155.dir/CheckSymbolExists.c.o  -o cmTryCompileExec722454155 -rdynamic 
+CMakeFiles/cmTryCompileExec722454155.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec722454155] Error 1
+make[1]: Leaving directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec722454155/fast] Error 2
+
+File /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1138489339/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1138489339.dir/build.make CMakeFiles/cmTryCompileExec1138489339.dir/build
+make[1]: Entering directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1138489339.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1138489339.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1138489339
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1138489339.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1138489339.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1138489339 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec1138489339] Error 1
+make[1]: Leaving directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1138489339/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec4174838006/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4174838006.dir/build.make CMakeFiles/cmTryCompileExec4174838006.dir/build
+make[1]: Entering directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4174838006.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec4174838006.dir/CheckSymbolExists.c.o   -c /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec4174838006
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4174838006.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec4174838006.dir/CheckSymbolExists.c.o  -o cmTryCompileExec4174838006 -rdynamic 
+CMakeFiles/cmTryCompileExec4174838006.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec4174838006] Error 1
+make[1]: Leaving directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec4174838006/fast] Error 2
+
+File /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2209247004/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2209247004.dir/build.make CMakeFiles/cmTryCompileExec2209247004.dir/build
+make[1]: Entering directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2209247004.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec2209247004.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-2.8/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2209247004
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2209247004.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec2209247004.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2209247004 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [cmTryCompileExec2209247004] Error 1
+make[1]: Leaving directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2209247004/fast] Error 2
+
+
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2504334696/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2504334696.dir/build.make CMakeFiles/cmTryCompileExec2504334696.dir/build
+make[1]: Entering directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2504334696.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec2504334696.dir/CheckSymbolExists.cxx.o -c /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^
+make[1]: *** [CMakeFiles/cmTryCompileExec2504334696.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec2504334696/fast] Error 2
+
+File /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1140869445/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1140869445.dir/build.make CMakeFiles/cmTryCompileExec1140869445.dir/build
+make[1]: Entering directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1140869445.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1140869445.dir/CheckSymbolExists.cxx.o -c /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^
+make[1]: *** [CMakeFiles/cmTryCompileExec1140869445.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1140869445/fast] Error 2
+
+File /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1454819564/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1454819564.dir/build.make CMakeFiles/cmTryCompileExec1454819564.dir/build
+make[1]: Entering directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1454819564.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec1454819564.dir/CheckSymbolExists.cxx.o -c /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^
+make[1]: *** [CMakeFiles/cmTryCompileExec1454819564.dir/CheckSymbolExists.cxx.o] Error 1
+make[1]: Leaving directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1454819564/fast] Error 2
+
+File /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the include file FL/Fl.H exists failed with the following output:
+Change Dir: /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec3855957215/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3855957215.dir/build.make CMakeFiles/cmTryCompileExec3855957215.dir/build
+make[1]: Entering directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3855957215.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -Wno-deprecated    -o CMakeFiles/cmTryCompileExec3855957215.dir/CheckIncludeFile.cxx.o -c /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:19: fatal error: FL/Fl.H: No such file or directory
+ #include <FL/Fl.H>
+                   ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec3855957215.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec3855957215/fast] Error 2
+
+
+Determining if the include file pgm.h exists failed with the following output:
+Change Dir: /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1105936610/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1105936610.dir/build.make CMakeFiles/cmTryCompileExec1105936610.dir/build
+make[1]: Entering directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1105936610.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++    -Wno-deprecated    -o CMakeFiles/cmTryCompileExec1105936610.dir/CheckIncludeFile.cxx.o -c /home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:17: fatal error: pgm.h: No such file or directory
+ #include <pgm.h>
+                 ^
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTryCompileExec1105936610.dir/CheckIncludeFile.cxx.o] Error 1
+make[1]: Leaving directory `/home/administrator/sensors_ws/build/CMakeFiles/CMakeTmp'
+make: *** [cmTryCompileExec1105936610/fast] Error 2
+
+

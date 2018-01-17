@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/devel
+
+Name: spidar
+Description: Description of spidar
+Version: 0.0.0
+Cflags: -I/home/administrator/sensors_ws/src/spidar/include
+Libs: -L/home/administrator/sensors_ws/devel/lib -lspidar
+Requires: roscpp std_msgs nmea_msgs

@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/install
+
+Name: amcl
+Description: Description of amcl
+Version: 1.12.4
+Cflags: -I/home/administrator/sensors_ws/install/include
+Libs: -L/home/administrator/sensors_ws/install/lib -lamcl_sensors -lamcl_map -lamcl_pf
+Requires: roscpp dynamic_reconfigure tf

@@ -1,0 +1,14 @@
+time rosTime_
+int64 traceSize_
+uint16 headerSize_
+string headerID_
+uint32 stampCount_
+uint32 traceNumber_
+uint32 odoTick_
+float64 tracePos_
+float64 duration_
+uint32 traceStatusFlag_
+uint16 numStacks_
+uint16 hardwareFlag_
+int16[] traceData_
+int32 dataSize_

@@ -1,0 +1,21 @@
+\subsubsection usage Usage
+\verbatim
+<node name="geobot_navigation" pkg="geobot_navigation" type="geobot_navigation">
+  <param name="maximum_linear_velocity" type="double" value="0.5" />
+  <param name="maximum_angular_velocity" type="double" value="0.5" />
+  <param name="error_tolerance2goal" type="double" value="0.4" />
+  <param name="no_of_segments_ahead" type="int" value="2" />
+  <param name="error_gain" type="double" value="1.1" />
+  <param name="cte_gain" type="double" value="0.2" />
+  <param name="heading_gain" type="double" value="0.5" />
+  <param name="velocity_constraint" type="double" value="1.0" />
+  <param name="obstacle_edge2robotcenter" type="double" value="0.7" />
+  <param name="trajectory_projection" type="double" value="1.0" />
+  <param name="cross_track_error_deadband" type="double" value="0.02" />
+  <param name="side_distance_avoidance_threshold" type="double" value="0.6" />
+  <param name="front_distance_avoidance_threshold" type="double" value="1.0" />
+  <param name="side_avoidance_blindband" type="double" value="0.4" />
+  <param name="minimum_velocity_constraint" type="double" value="0.1" />
+</node>
+\endverbatim
+

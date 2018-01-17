@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/install
+
+Name: launch_delay
+Description: Description of launch_delay
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/administrator/sensors_ws/install/lib 
+Requires: 

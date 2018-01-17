@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/devel
+
+Name: map_server
+Description: Description of map_server
+Version: 1.12.4
+Cflags: -I/home/administrator/sensors_ws/src/navigation/map_server/include
+Libs: -L/home/administrator/sensors_ws/devel/lib -limage_loader
+Requires: roscpp tf nav_msgs

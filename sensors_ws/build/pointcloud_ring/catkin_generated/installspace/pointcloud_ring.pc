@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/install
+
+Name: pointcloud_ring
+Description: Description of pointcloud_ring
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/administrator/sensors_ws/install/lib 
+Requires: roscpp std_msgs sensor_msgs

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+
+<launch>
+
+   <!--  For offline use 
+    <param name="/use_sim_time" value="true" /> -->
+<node pkg="tf" type="static_transform_publisher" name="velodyne_laser_broadcaster" args="0 0 0 0 0 0 1 velodyne laser 100"/>
+
+            <!-- run pointcloud_to_laserscan node -->
+    <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="pointcloud_to_laserscan_node" output="screen">
+
+        <param name="transform_tolerance" value="0.01"/>
+        <param name="min_height" value="-0.3"/>
+        <param name="max_height" value="0.5"/>
+
+        <param name="angle_min" value="-1.92"/>
+        <param name="angle_max" value="1.92"/>
+        <param name="angle_increment" value="0.007"/>
+
+    <!--     center of lidar -->
+
+        <param name="robot_Front_2_Center" value="0.4"/> 
+        <param name="robot_Back_2_Center" value="0.6"/>
+        <param name="front_clearance_2_obstacle" value="0.2"/>
+
+        <param name="front_detection_threshold" value="3.0"/>
+        <param name="robot_halfwidth_with_clearance" value="0.4"/>
+        <param name="side_distance_threshold" value="0.8"/>
+
+        <!-- It should be robot_width_with_clearance + additional side clearance to keep/maintain from  obstacle -->
+        <param name="side_distance_avoidance_threshold" value="0.7"/>
+        <param name="front_distance_avoidance_threshold" value="2.2"/>
+
+
+        <param name="lidar_offset_from_robot_center" value="0.1"/>
+
+        <param name="proportionality_power" value="1"/>
+
+        <remap from="scan" to="scan_out_from_pointcloud"/>
+        <remap from="merged_cloud_out" to="cloud_out_from_laser"/>
+
+
+    </node>
+
+    <!-- run velocity_control node -->
+    <node pkg="pointcloud_to_laserscan" type="velocity_control_node" name="velocity_control_node" output="screen">
+
+        <remap from="cmd_vel_in" to="twist_cmd_vel_out"/>
+        <remap from="cmd_vel_out" to="/husky_velocity_controller/cmd_vel"/>
+        <remap from="velocity_multiplier" to="velocity_multiplier"/> 
+        
+    </node>
+
+    <node pkg="pointcloud_ring" name="pointcloud2ring_converter" type="pointcloud_ring_node" output="screen">
+
+                <param name="ring_layer" value="7"/>
+                <remap from="points2_in" to="cloud_in"/>
+                <remap from="points2_out" to="cloud_ring" />
+
+    </node>
+
+    <node pkg="pointcloud_to_laserscan" type="merge_pointcloud_node" name="merge_pointcloud_node" output="screen">
+
+        <remap from="cloud_in" to="cloud_ring"/>
+        <remap from="merged_cloud_out" to="merged_cloud_out"/>
+
+    </node>
+
+
+</launch>

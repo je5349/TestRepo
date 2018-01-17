@@ -1,0 +1,11 @@
+<launch>
+	<node pkg="pointcloud_ring" name="pointcloud2ring_converter" type="pointcloud_ring_node" output="screen">
+		
+		<param name="ring_layer" value="7"/>
+
+		<!-- poincloud2 to pointcloud -->
+		<remap from="points2_in" to="cloud_in"/>
+		<remap from="points2_out" to="cloud_ring" />
+		
+	</node>
+</launch>

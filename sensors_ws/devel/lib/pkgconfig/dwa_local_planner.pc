@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/devel
+
+Name: dwa_local_planner
+Description: Description of dwa_local_planner
+Version: 1.12.4
+Cflags: -I/home/administrator/sensors_ws/devel/include -I/home/administrator/sensors_ws/src/navigation/dwa_local_planner/include
+Libs: -L/home/administrator/sensors_ws/devel/lib -ldwa_local_planner
+Requires: dynamic_reconfigure pluginlib roscpp

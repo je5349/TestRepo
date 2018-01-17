@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/install
+
+Name: husky_rtkgps_serialbridge
+Description: Description of husky_rtkgps_serialbridge
+Version: 0.0.1
+Cflags: 
+Libs: -L/home/administrator/sensors_ws/install/lib 
+Requires: 

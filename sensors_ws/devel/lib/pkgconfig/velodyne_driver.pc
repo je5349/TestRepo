@@ -1,0 +1,8 @@
+prefix=/home/administrator/sensors_ws/devel
+
+Name: velodyne_driver
+Description: Description of velodyne_driver
+Version: 1.2.0
+Cflags: -I/home/administrator/sensors_ws/devel/include -I/home/administrator/sensors_ws/src/velodyne/velodyne_driver/include
+Libs: -L/home/administrator/sensors_ws/devel/lib -lvelodyne_input
+Requires: diagnostic_updater dynamic_reconfigure nodelet roscpp tf velodyne_msgs

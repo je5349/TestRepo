@@ -1,8 +1,0 @@
-prefix=/home/administrator/sensors_ws/install
-
-Name: gpr_gps_converge
-Description: Description of gpr_gps_converge
-Version: 0.0.0
-Cflags: -I/home/administrator/sensors_ws/install/include
-Libs: -L/home/administrator/sensors_ws/install/lib -lgpr_gps_converge
-Requires: roscpp rospy std_msgs gpr_collect message_runtime

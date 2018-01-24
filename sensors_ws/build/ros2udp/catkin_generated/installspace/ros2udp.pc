@@ -1,8 +1,0 @@
-prefix=/home/administrator/sensors_ws/install
-
-Name: ros2udp
-Description: Description of ros2udp
-Version: 0.0.0
-Cflags: -I/home/administrator/sensors_ws/install/include
-Libs: -L/home/administrator/sensors_ws/install/lib 
-Requires: geometry_msgs roscpp std_msgs message_runtime

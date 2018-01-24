@@ -1,8 +1,0 @@
-prefix=/home/administrator/sensors_ws/install
-
-Name: voxel_grid
-Description: Description of voxel_grid
-Version: 1.12.4
-Cflags: -I/home/administrator/sensors_ws/install/include
-Libs: -L/home/administrator/sensors_ws/install/lib -lvoxel_grid
-Requires: roscpp

@@ -1,8 +1,0 @@
-prefix=/home/administrator/sensors_ws/install
-
-Name: geobot_pose_publisher
-Description: Description of geobot_pose_publisher
-Version: 0.0.0
-Cflags: -I/home/administrator/sensors_ws/install/include
-Libs: -L/home/administrator/sensors_ws/install/lib -lgeobot_pose_publisher
-Requires: roscpp std_msgs sensor_msgs nmea_msgs tf message_runtime

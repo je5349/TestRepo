@@ -95,7 +95,7 @@ class PointCloudConverter
      }
 
 
-
+    // convert pointcloud2 depend on ring number
     // converting from pointcloud2 to pointcloud1
     void
       cloud_cb_points2 (const sensor_msgs::PointCloud2 msg)
